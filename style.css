@@ -1,0 +1,59 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color:white;
+    padding: 8px 25px;
+    transition: all 5.s ease;
+}
+.navbar ul li a:hover {
+    background-color: white;
+    color: azure;
+    box-shadow: 0 0 10px black;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('img.3jpg.jpg');
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
